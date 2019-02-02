@@ -1,0 +1,29 @@
+<% const qrcode = get_config_from_obj(service, 'qrcode');
+    if (qrcode) { %>
+<a class="button is-success donate">
+    <span class="icon is-small">
+        <i class="fab fa-weixin"></i>
+    </span>
+    <span><%= __('donate.' + type) %></span>
+    <div class="qrcode" id="qrcode-wechat">
+<!--
+        <img src="<%= url_for(qrcode) %>" alt="<%= __('donate.' + type) %>">
+-->
+    </div>
+    <script>
+        new QRCode(document.getElementById('qrcode-wechat'),
+            {
+                "text": "<%= url_for(qrcode) %>",
+                "width": 128,
+                "height": 128,
+                "colorDark" : "#363636",
+                "colorLight" : "#ffffff",
+                "correctLevel" : QRCode.CorrectLevel.H
+            });
+    </script>
+</a>
+<% } else { %>
+<div class="notification is-danger">
+    You forgot to set the <code>qrcode</code> for Wechat. Please set it in <code>_config.yml</code>.
+</div>
+<% } %>
