@@ -12,4 +12,4 @@ Thinker of computer science.
 
 Love to watch movies and play Minecraft.
 
-Big fun and {% calc '(new Date()).getFullYear()-2007' %} years user of Linux OS.
+Big fun and <span id="year-of-being-linux-user"><script>document.getElementById('year-of-being-linux-user').innerHTML=</script> of Linux OS.
