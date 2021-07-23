@@ -1,0 +1,11 @@
+body {
+    background-color: #f7f7f7;
+    mask-image: url(/blog/img/texture.png);
+    -webkit-mask-image: url(/blog/img/texture.png);
+    mask-repeat: repeat;
+    -webkit-mask-repeat: repeat;
+    mask-size: 100px 100px;
+    -webkit-mask-size: 100px 100px;
+    mask-mode: luminance;
+    -webkit-mask-mode: luminance;
+}
