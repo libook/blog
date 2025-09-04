@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "bulma-stylus": "0.8.0",
-    "hexo": "^5.0.0",
+    "hexo": "^7.3.0",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-category": "^1.0.0",
     "hexo-generator-index": "^2.0.0",
@@ -28,6 +28,6 @@
     "hexo-renderer-stylus": "^2.0.0",
     "hexo-server": "^2.0.0",
     "hexo-tag-real-time-calculator": "^1.1.0",
-    "hexo-theme-icarus": "^4.3.0"
+    "hexo-theme-icarus": "^6.1.1"
   }
 }
